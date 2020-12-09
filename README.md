@@ -1,2 +1,2 @@
 # KerasForTextClassfication
-中文Keras文本分类模板
+中文Keras文本分类竞赛模板
