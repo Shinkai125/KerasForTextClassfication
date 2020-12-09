@@ -12,6 +12,7 @@ from tqdm import tqdm
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s')
 
+# 感谢https://fastnlp.readthedocs.io/zh/latest/tutorials/tutorial_3_embedding.html提供的下载链接
 _EMBEDDING_TYPES = {
     'glove.42B.300d': {
         'file': 'glove.42B.300d.txt',
