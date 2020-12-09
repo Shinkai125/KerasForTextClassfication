@@ -3,7 +3,7 @@
 
 ### 词向量
 ### 预训练词向量精简 
-抽取预训练的词向量前n行，只保留常用词汇，效果和这个 [项目](https://github.com/cliuxinxin/TX-WORD2VEC-SMALL)一样。
+抽取预训练的词向量前n行(这是里腾讯开源的[词向量](https://ai.tencent.com/ailab/nlp/en/data/Tencent_AILab_ChineseEmbedding.tar.gz))，只保留常用词汇，效果和这个 [项目](https://github.com/cliuxinxin/TX-WORD2VEC-SMALL)一样。
 ```python
 from tqdm import  tqdm
 from embeddings import get_embeddings_index, build_embedding_weights
