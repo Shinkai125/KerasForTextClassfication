@@ -21,6 +21,16 @@ puncts = [',', '.', '"', ':', ')', '(', '-', '!', '?', '|', ';', "'", '$', '&', 
           '╩', '╚', '³', '・', '╦', '╣', '╔', '╗', '▬', '❤', 'ï', 'Ø', '¹', '≤', '‡', '√']
 
 
+# 定义删除除字母,数字，汉字以外的所有符号的函数
+def remove_punctuation(line):
+    line = str(line)
+    if line.strip() == '':
+        return ''
+    rule = re.compile(u"[^a-zA-Z0-9\u4E00-\u9FA5]")
+    line = rule.sub('', line)
+    return line
+
+
 # 空格分隔标点符号
 def clean_punctuation(x):
     x = str(x)
